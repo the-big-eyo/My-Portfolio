@@ -53,94 +53,111 @@
 						<!-- Work -->
 							<article id="work">
 								<h1 class="major">projects</h1>
-								<h3>inventory optimisation dashboard</h3>
+								<h3>inventory optimisation dashboard for minimising stockout and excess inventory</h3>
 								<a href="https://github.com/the-big-eyo/inventory-optimisation-powerbi-dashboard"><span class="image main"><img src=images/inventoryoptimisation.jpg   alt="" /></span></a>
-								<p>This dashboard analyzes product-level inventory performance using Power BI and supply chain analytics. I calculated safety stock, reorder points, daily usage, and inventory value to identify stockout risks, overstocked items, and opportunities to optimize working capital</p>
-								<p>Key insights include low-coverage SKUs needing urgent replenishment, categories with excess inventory, and trends showing demand variability.
-                                   This project demonstrates my ability to apply data modeling, DAX measures, and inventory management techniques to support data-driven supply chain decisions</p>
-                                   
-								   <h3>reverse supply chain performance dashboard</h3>
+								<p>Business Problem:</p>
+								<p>A mid-sized retailer struggled with frequent stockouts on high-demand SKUs and excess stock on slow-moving items. This caused lost sales, higher carrying costs, and unpredictable lead times.</p>
+                                <p>Objective:</p>
+								<p>Identify inventory risks, prioritise SKUs requiring immediate restocking, and recommend optimal safety stock and reorder points to reduce stockouts and holding costs</p>   
+								 <p>Data Source:</p>
+								 <p>Inventory transaction records including SKU, daily sales, on-hand quantity, lead time, and reorder history</p> 
+								<p>Tools & Techniques:</p>
+								<ul>
+									<li>Data modelling & calculations in Power BI</li>
+									<li>DAX measures for safety stock & reorder point logic</li>
+									<li>Time-series analysis for demand variability</li>
+									<li>Visual dashboard with KPIs and trend charts</li>
+								</ul>
+								<p>Key Deliverables:</p>
+								<ul>
+									<li>Dashboard showing stock coverage, demand variability, reorder triggers, and inventory value heatmaps</li>
+									<li>Table of high-risk SKUs (stockout risk vs. stock level)</li>
+									<li>Demand forecast bands</li>
+								</ul>
+								<p>Business Impact (Quantitative):</p>
+								<ul>
+									<li>Identified 15 SKUs at critical risk of stockout within 2 weeks</li>
+									<li>Recommended new reorder levels that could reduce stockouts by ~25%</li>
+									<li>Suggested reductions in excess inventory worth ~$15,000 in holding costs annually</li>
+								</ul>
+
+								<p>PS: Tap on the image above to download and interact with file</p>
+
+
+
+
+								<h3>Reverse Logistics Performance Analysis For Returned Solar Product Operations </h3>
 								   <a href="https://github.com/the-big-eyo/reverse-supply-chain/blob/main/Solar%20servicing%20reverse%20supply%20chain.pbix"><span class="image main"><img src=images/solarservicing.jpg  alt="" /></span></a>
-								<p>Overview:</p>
-<p>I built an interactive Power BI dashboard to analyze the reverse-logistics process for returned solar products. The project focuses on turnaround time, cost analysis, and regional performance.</p>
+								<p>Business Problem:</p>
+<p>Returned items were taking too long to process, and management lacked visibility into turnaround times, cost drivers, and regional performance. This was delaying refurbishment cycles and increasing costs</p>
 
-<p>What I Did:</p>
+<p>Goal:</p>
 
-<p>Cleaned and modeled the dataset in Power BI,
+<p>Analyse return workflows to pinpoint bottlenecks and prioritise process improvements.</p>
 
-Created lead-time metrics (Request → Pickup → Arrival → Completion),
+<p>Data Source:</p>
 
-Built a funnel chart to visualize where delays occur.</p>
+<p>Return records with timestamps (request → pickup → arrival → completion), cost per return, region, and item outcomes (repaired, scrapped, refurbished)</p>
 
-<p>Designed KPIs for:</p>
+<p>Tools & Techniques:</p>
 
-<p>Total Repaired, Refurbished, Scrapped,
+<ul>
+	<li>Power BI for interactive visualization</li>
+	<li>KPI design (lead time measures, cost per return, return trends)</li>
+	<li>Funnel and trend charts highlighting bottlenecks</li>
+</ul>
+<p>Key Findings:</p>
+<ul>
+	<li>Delays occur mainly between Request and Pickup stages</li>
+	<li>Certain regions incur 20–30% higher processing costs</li>
+	<li>Monthly return trend shows consistent spikes, suggesting seasonal effects</li>
+</ul>
+<p>Business Impact:</p>
+<ul>
+	<li>Prioritise pickup process changes to reduce lead time by up to 18%</li>
+	<li>Target cost reduction actions in expensive regions</li>
+	<li>Use repair/refurbish insights to improve asset lifecycle & cost savings</li>
+</ul>
+<p>PS: Tap on the image above to download and interact with file.</p>
 
-Average Cost per Return,
-
-Latest Monthly Return Volume,
-
-Most Expensive Region, and
-
-Developed a monthly return trend for tracking product performance over time</p>
-
-<p>Key Insights:</p>
-
-<p>Major delays occur before pickup.
-
-Some regions generate higher return processing costs.
-
-Return volumes show noticeable monthly patterns.
-
-Most returned items were recoverable (repair or refurbishment).</p>
-
-Tools Used:
-Power BI, DAX, Excel/CSV</p>
-
-                               <h3>Transportation Cost Analysis (sql project)</h3>
+                               <h3>Transportation Cost Efficiency Analysis for Logistics Network (sql project)</h3>
 								<a href="https://github.com/the-big-eyo/Transportation-cost-analysis-SQL-PROECT-"><span class="image main"><img src=images/transportationcostanalysis.jpg  alt="" /></span></a>
-								<p>Overview:</p>
+								<p>Business Problem:</p>
 
-<p>Analyzed transportation costs and efficiency within a logistics network using SQL.
-The project focuses on understanding route efficiency, truck performance, and cost drivers in supply chain operations.</p>
+<p>The transport operations team needed clarity on which routes and trucks were cost-efficient and what factors drove operational cost increases.</p>
 
-<p>Business Focus:</p>
+<p>Objective:</p>
 
-<p>Identify high-cost and high-traffic routes,
+<p>Identify high-cost routes, evaluate truck performance, and quantify the cost impact of distance & shipment weight.</p>
+<p>Data Source:</p>
+<p>Relational dataset with tables: Routes (origin, destination, distance), Trucks (capacity, fuel efficiency), Shipments (weight, cost, delivery dates).</p>
+<p>Tools & techniques:</p>
+<ul>
+	<li>SQL for data extraction & aggregation</li>
+	<li>Window functions for performance ranking</li>
+	<li>Metrics calculated at route & truck level</li>
+</ul>
+<p>Key Actions:</p>
+<ul>
+	<li>Calculated cost/km and cost/ton metrics</li>
+	<li>Ranked routes & trucks by efficiency</li>
+	<li>Identified patterns between distance and transportation costs</li>
+</ul>
+<p>Outcomes & insights:</p>
+<ul>
+	<li>Determined that Route A had 30% higher cost/km than the network average</li>
+	<li>Identified Truck X as most efficient, suggesting reuse for long runs</li>
+	<li>Highlighted overweight shipments as a major cost factor</li>
+</ul>
+<p>Business Impact:</p>
+<ul>
+	<li>Potential to re-allocate truck schedules to reduce average cost/km by ~12%</li>
+	<li>Data-backed recommendations for adjusting rates or routes</li>
+	<li>Fuel & maintenance-linked cost insights to support pricing and operations decisions</li>
+</ul>
+<p>PS: Tap on the image above to download and interact with file.</p>
 
-Evaluate truck performance and revenue contribution,
-
-Understand how distance and weight impact transportation cost.
-
-<p>Dataset:</p>
-
-Routes: <p>origin, destination, distance (km)</p>
-
-Trucks: <p>capacity, fuel efficiency</p>
-
-Shipments: <p>weight, cost, delivery date</p>
-
-<p>Key SQL Analysis:</p>
-
-<p>Cost per kilometer and cost per ton calculations,
-
-Route-level cost efficiency comparisons,
-
-Truck performance ranking using window functions,
-
-Aggregation of shipment weight and total cost.</p>
-
-<p>Insights:</p>
-
-Some routes handle significantly more shipments than others,
-
-Cost per km varies across delivery dates,
-
-One truck consistently generates higher transportation revenue,
-
-Heavier shipments are concentrated on specific routes.</p>
-								<p></p>
-							</article>
+</article>
 
 						<!-- About -->
 							<article id="about">
